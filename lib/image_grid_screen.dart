@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -39,23 +41,11 @@ class _ImageGridState extends State<ImageGrid> {
                 height: 100,
                 width: 100,
                 color: Colors.greenAccent,
-                child: Image.asset(
-                  _imagePath[index],
+                child: Image.file(
+                  File(_imagePath[index]),
                   fit: BoxFit.cover,
                 ),
               ),
-              // Padding(
-              //   padding: const EdgeInsets.all(10),
-              //   child: Container(
-              //     height: 90,
-              //     width: 90,
-              //     color: Colors.red,
-              //     child: Image.network(
-              //       _imagePath[index],
-              //       fit: BoxFit.cover,
-              //     ),
-              //   ),
-              // ),
               const SizedBox(
                 height: 20,
               ),
