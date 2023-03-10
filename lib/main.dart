@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'image_grid_screen.dart';
+import 'screens/image_grid_screen.dart';
+import 'screens/image_picker_with_login/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ImageGrid(),
+      // home: const ImageGrid(),
+      home: const LoginScreen(),
     );
   }
 }
