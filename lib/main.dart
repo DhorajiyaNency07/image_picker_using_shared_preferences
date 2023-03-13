@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/image_grid_screen.dart';
+import 'screens/image_save_delete_shared_pref.dart';
 import 'screens/image_picker_with_login/profile_screen.dart';
 
 void main() {
@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: const ImageGrid(),
-      home: const LoginScreen(),
+      // home: const ImageGrid(),  // only image picker save and delete using shared preference and gridview
+      home: const LoginScreen(),   // try to using login signup on shared preference and then image picker
     );
   }
 }
