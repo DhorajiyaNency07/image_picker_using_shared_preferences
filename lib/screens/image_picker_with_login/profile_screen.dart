@@ -1,10 +1,9 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:image_picker_using_shared_preferences/model/first_model.dart';
 import 'package:image_picker_using_shared_preferences/screens/image_picker_with_login/image_home_screen.dart';
 
-import '../../models/email_pass_model.dart';
 
 class LoginScreen extends StatefulWidget {
   final LoginModel? item;
