@@ -90,13 +90,13 @@ class _ImageGridState extends State<ImageGrid> {
     setState(() {
       _imagePath.add(image.path);
     });
-    _saveImages(_imagePath);
+    _saveImages(_imagePath);  // most important line if i remove this line my image not store after restart
   }
 
   void _deleteImage(int index) {
     setState(() {
       _imagePath.removeAt(index);
     });
-    _saveImages(_imagePath);
+    _saveImages(_imagePath); // most important line if i remove this line my image not delete after restart
   }
 }

@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: const ImageGrid(),  // only image picker save and delete using shared preference and gridview
-      home: const LoginScreen(),   // try to using login signup on shared preference and then image picker
+      home: const ImageGrid(),  // only image picker save and delete using shared preference and gridview
+      // home: const LoginScreen(),   // try to using login signup on shared preference and then image picker
     );
   }
 }
